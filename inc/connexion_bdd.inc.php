@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = @new Mysqli("localhost:8000", "root", "", "helloeyes");
+$mysqli = @new Mysqli("localhost:3306", "root", "", "helloeyes");
 if($mysqli->connect_error)
 {
 	die("Oups ! Un probleme est survenu lors de la tentative de connexion a la BDD: ".$mysqli->connect_error);
